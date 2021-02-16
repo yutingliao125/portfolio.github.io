@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Yuting Liao's Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/logo.ico" type="image/x-icon" / >
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+
+  <!-- Masthead -->
+  <header>
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu_mobile">
+        <a href="index.html"><li>MY WORKS 我的作品</li></a>
+        <a href="resume.html"><li>RESUME 個人履歷</li></a>
+        <a href="contact.html"><li>CONTACT 聯繫我</li></a>
+      </ul>
+    </div>
+    <div class="logo" id="logo">
+    </div>
+    <div class="nav_pc">
+      <div class="menu" id="menu">
+        <div id="menu_logo">
+        </div>
+        <div  class="item">
+          <a href="#website" class="label"><h4 id="menu_web">WEBSITE<br>
+          網頁</h4></a>
+        </div>
+        <div  class="item">
+          <a href="#application" class="label"><h4 id="menu_app">APPLICATION<br>應用程式</h4></a>
+        </div>
+        <div  class="item">
+         <a href="#gaming" class="label"><h4 id="menu_gaming">GAMING<br>遊戲</h4></a>
+        </div>
+        <div class="item">
+          <a href="resume.html"><h4>RESUME<br>個人履歷</h4></a>
+        </div>
+        <div class="item">
+          <a href="contact.html"><h4>CONTACT<br>聯繫我</h4></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Icons Grid -->
+  <div class="homepage">
+    <div class="flag">
+        <p>COOKIETAG WEBSITE</p>
+    </div>
+    <a href="#logo" class="label">
+      <div id="backtop">
+      ↑
+      </div>
+    </a>
+  </div>
+  <section id="detail_page" class="container">
+      <div class="content">
+        <img src="img/detail/cookietag_1.png">
+        <img src="img/detail/cookietag_2.png">
+        <img src="img/detail/cookietag_3.png">
+      </div>
+  </section>
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="bg">
+    </div>
+    <div class="container">
+      <h1>LET'S GET IN TOUCH!</h1>
+      <div class="contact">
+        <div class="item">
+          <span><img src="img/gmail.png">yutingliao125@gmail.com</span>
+        </div>
+        <div class="item">
+          <span><img src="img/line.png">yu-ting125</span>
+        </div>
+        <div class="item">
+          <span><img src="img/phone.png">+886 935205725</span>
+        </div>
+      </div>
+      <span>Liao Yu Ting 廖淯婷  |  UI/UX Designer</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(".label").bind("click touch",function(){
+                //根據a標籤的href轉換為id選擇器，獲取id元素所處的位置，並高度減50px（這裡根據需要自由設定）
+                $('html,body').animate({scrollTop: ($($(this).attr('href')).offset().top -100 )},500);
+  });
+  window.onscroll = function() {myFunction()};
+  var header = document.getElementById("menu");
+  var logo = document.getElementById("menu_logo");
+  var sticky = header.offsetTop;
+  var backtop = document.getElementById("backtop");
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      logo.classList.add("display");
+    } else {
+      header.classList.remove("sticky");
+      logo.classList.remove("display");
+    }
+    if (window.pageYOffset > 1000) {
+      backtop.classList.add("display");
+    } else {
+      backtop.classList.remove("display");;
+    }
+  }
+    
+  </script>
+
+
+</body>
+
+</html>

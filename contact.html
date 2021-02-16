@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Yuting Liao's Resume</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu_mobile">
+        <a href="index.html"><li>MY WORKS 我的作品</li></a>
+        <a href="resume.html"><li>RESUME 個人履歷</li></a>
+        <a href="contact.html"><li>CONTACT 聯繫我</li></a>
+      </ul>
+    </div>
+    <div class="logo" id="logo">
+    </div>
+    <div class="nav_pc">
+      <div class="menu" id="menu">
+        <div id="menu_logo">
+        </div>
+        <div  class="item">
+          <a href="#website" class="label"><h4 id="menu_web">WEBSITE<br>
+          網頁</h4></a>
+        </div>
+        <div  class="item">
+          <a href="#application" class="label"><h4 id="menu_app">APPLICATION<br>應用程式</h4></a>
+        </div>
+        <div  class="item">
+         <a href="#gaming" class="label"><h4 id="menu_gaming">GAMING<br>遊戲</h4></a>
+        </div>
+        <div class="item">
+          <a href="resume.html"><h4>RESUME<br>個人履歷</h4></a>
+        </div>
+        <div class="item">
+          <a href="contact.html"><h4>CONTACT<br>聯繫我</h4></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Icons Grid -->
+  <div class="homepage">
+    <div class="flag">
+        <p>CONTACT ME</p>
+    </div>
+  </div>
+  <section class="contact_list">
+      <h1 class="col-md-12">GET IN TOUCH</h1>
+      <div class="info"> 
+        <div class="info_detail">
+          <h4>連絡信箱</h4>
+          <p>yutingliao125@gmail.com</p>
+        </div>
+        <div class="info_detail">
+          <h4>手機號碼</h4>
+          <p>(+886) 0935 205 725</p></div>
+        </div>
+      </div>
+      <div class="list">
+        <div class="row">
+          <div class="col-md-12">
+            <input type="text" name="姓氏" placeholder="姓氏" id="firstname">
+            <input type="text" name="名稱" placeholder="名稱" id="lastname">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <input  type="text" name="email" placeholder="EMAIL" id="email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <input  type="text" name="phoine" placeholder="電話ex. 0222345678／手機號碼 ex. 0912345678" id="phone">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <textarea name="message" placeholder="請留下您的資訊..." id="message" ></textarea>
+          </div>
+        </div>
+        <div class="col-md-12 send">
+          <button  value="送出" id="send">送出</button>
+          <span>​十分感謝您的聯繫，我將盡快回覆</span>
+        </div>
+      </div>
+  </section>
+  <!-- Footer -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+  window.onscroll = function() {myFunction()};
+  var header = document.getElementById("menu");
+  var logo = document.getElementById("menu_logo");
+  var sticky = header.offsetTop;
+  var backtop = document.getElementById("backtop");
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+      logo.classList.add("display");
+    } else {
+      header.classList.remove("sticky");
+      logo.classList.remove("display");
+    }
+    if (window.pageYOffset > 1000) {
+      backtop.classList.add("display");
+    } else {
+      backtop.classList.remove("display");;
+    }
+  }
+  </script>
+
+
+</body>
+
+</html>
