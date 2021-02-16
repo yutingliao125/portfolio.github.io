@@ -788,6 +788,7 @@ margin: 0 20px;
     width: 100%;
     opacity: 1;
     background-color: rgba(0,0,0, 0.5);
+    -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
     position: absolute;
   }
@@ -796,6 +797,7 @@ margin: 0 20px;
     font-weight: 300;
     text-shadow: 0px 0px 0px #fff;
     color: #FFF;
+    padding-top: 250px;
   }
   .item .blur span, .item .blur2 span, .item .blur3 span {
     color: #FFF;
