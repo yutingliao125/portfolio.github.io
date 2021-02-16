@@ -407,7 +407,6 @@ letter-spacing: 2px;
 }
 #flim{
   width: 100%;
-  background: #FFF;
   text-align: center;
   height: 100%;
   padding: 10px 0 100px 0;
@@ -416,6 +415,24 @@ letter-spacing: 2px;
   margin: 0 auto;
   border-radius: 20px;
   max-width: 750px;
+}
+.flim_preach{
+  background: #FFF;
+}
+.flim_gash{
+  background: #e10f6c;
+}
+.flim_eos iframe{
+  max-width: 320px !important;
+  margin: 0 !important;
+  position: relative;
+  right: -25%;
+  top:75px;
+}
+.flim_eos{
+  background-image: url("../img/detail/eosdice_2.png");
+  background-size: cover;
+  height: 100%;
 }
 .experience p{
   letter-spacing: 2px;
@@ -822,6 +839,14 @@ margin: 0 20px;
   footer {
     margin-top: 100px;
   }
+  footer img {
+    max-width: 20px;
+    max-height: 20px;
+    top: 4px;
+  }
+  footer .item {
+    margin: 10px 10px;
+  }
   #detail_page .content {
      margin-top: 0px; 
      padding-top: 100px;
@@ -896,7 +921,6 @@ margin: 0 20px;
   }
   #flim{
   width: 100%;
-  background: #FFF;
   text-align: center;
   height: 100%;
   padding: 10px 20px 10px 20px;
@@ -907,4 +931,7 @@ margin: 0 20px;
     max-width: 750px;
     max-height: 200px;
   }
+  .flim_eos iframe{
+  max-width: 150px !important;
+  top:0px;
 }
