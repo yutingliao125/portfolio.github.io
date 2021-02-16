@@ -857,6 +857,7 @@ margin: 0 20px;
     margin-right: 0;
     letter-spacing: 1px;
     /* float: left; */
+    border-radius: 0px;
   }
   #firstname{
     margin-bottom: 40px;
