@@ -781,6 +781,9 @@ margin: 0 20px;
   #application .title {
     width: 100% !important;
   }
+  .works .item {
+    margin: 10px 0 10px 0 ;
+  }
   .blur,.blur2,.blur3 {
     height: 100px;
     width: 100%;
